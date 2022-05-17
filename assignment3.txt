@@ -1,0 +1,33 @@
+-- 
+-- Roll No: <30>
+-- Name: <Mushahida>
+-- Program: <Assignment 3 >
+-- 
+--
+-- Dumping data for table <Teaches>
+--
+
+insert into Teaches values(01,'dbms','2010-06-28','2015-03-12');
+insert into Teaches values(02,'networking','2015-10-12','2018-04-20');
+insert into Teaches values(03,'ai','2017-07-15','2020-03-26');
+insert into Teaches values(04,'os','2020-10-26','2022-03-26');
+insert into Teaches values(05,'ipr','2021-10-26','2023-03-26');
+
+update subject set duration = 4;
+
+
+--
+-- SQl Query Statements
+--
+select * from faculty where doj >= '2020-03-10';
+select * from subject where roomno = 'C03' and duration>2;
+select * from subject where sdate >= '2020-04-01' and edate <= '2020-04-30';
+select faculty.fname, subject.sname, subject.duration from faculty, subject where faculty.fno=subject.fno and subject.duration;
+
+-- -----SQL query statments preceeded by the its question-------- # This line may be removed in the actual file
+-- -----Question number should be commented---------------#This line may be removed in the actual file
+
+	
+	
+	
+
